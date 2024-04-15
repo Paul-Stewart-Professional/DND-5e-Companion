@@ -1,0 +1,50 @@
+query SpellDetail($index: String) {
+  spell(index: $index) {
+    attack_type
+    casting_time
+    damage {
+      damage_at_character_level {
+        level
+        damage
+      }
+      damage_type {
+        desc
+        name
+        index
+      }
+      damage_at_slot_level {
+        damage
+        level
+      }
+    }
+    level
+    name
+    range
+    desc
+    higher_level
+    area_of_effect {
+      size
+      type
+    }
+    dc {
+      success
+      desc
+      type {
+        name
+      }
+    }
+    school {
+      name
+      desc
+      index
+    }
+    classes {
+      name
+    }
+    components
+    heal_at_slot_level {
+      level
+      healing
+    }
+  }
+}

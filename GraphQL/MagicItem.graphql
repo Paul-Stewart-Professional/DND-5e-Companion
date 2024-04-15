@@ -1,0 +1,11 @@
+query MagicItem($equipmentCategory: StringFilter, $order: MagicItemOrder, $name: String) {
+  magicItems(equipment_category: $equipmentCategory, order: $order, name: $name) {
+    rarity
+    name
+    equipment_category {
+      name
+    }
+    desc
+    index
+  }
+}

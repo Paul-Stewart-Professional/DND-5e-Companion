@@ -1,0 +1,12 @@
+query Spells($name: String, $level: IntFilter, $class: StringFilter, $school: StringFilter, $range: StringFilter, $limit: Int!) {
+  spells(name: $name, level: $level, class: $class, school: $school, range: $range, limit: $limit) {
+    name
+    level
+    desc
+    school {
+      name
+    }
+    range
+    index
+  }
+}

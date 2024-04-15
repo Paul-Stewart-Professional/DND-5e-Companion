@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02003D842BAF8E7500E36241 /* MagicSchools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D832BAF8E7500E36241 /* MagicSchools.swift */; };
+		02003D862BB5AC9900E36241 /* SpellsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D852BB5AC9900E36241 /* SpellsDetailView.swift */; };
+		02003D882BB5BCD000E36241 /* SpellDetailTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D872BB5BCD000E36241 /* SpellDetailTitleView.swift */; };
+		02003D8A2BB5BD1900E36241 /* SpellDetailLevelClassSchoolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D892BB5BD1900E36241 /* SpellDetailLevelClassSchoolView.swift */; };
+		02003D8C2BB5BD8C00E36241 /* SpellDetailClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D8B2BB5BD8C00E36241 /* SpellDetailClassesView.swift */; };
+		02003D8E2BB5BDBC00E36241 /* SpellDetailDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D8D2BB5BDBC00E36241 /* SpellDetailDescriptionView.swift */; };
+		02003D902BB5BDF300E36241 /* SpellDetailHigherLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D8F2BB5BDF300E36241 /* SpellDetailHigherLevelView.swift */; };
+		02003D932BB5BE4700E36241 /* SpellDetailRangeAOEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D922BB5BE4700E36241 /* SpellDetailRangeAOEView.swift */; };
+		02003D952BB5BE8300E36241 /* SpellDetailAOEShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D942BB5BE8300E36241 /* SpellDetailAOEShapeView.swift */; };
+		02003D972BB5BEA800E36241 /* SpellDetailDCTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D962BB5BEA800E36241 /* SpellDetailDCTypeView.swift */; };
+		02003D992BB5C3A000E36241 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02003D982BB5C3A000E36241 /* Range.swift */; };
+		020826CF2BAB29ED000EE46A /* UISegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020826CE2BAB29ED000EE46A /* UISegmentedControl.swift */; };
+		022C99FB2BABA98B00C168B3 /* ItemSearchFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C99FA2BABA98B00C168B3 /* ItemSearchFilterView.swift */; };
+		022C99FD2BAF6A3A00C168B3 /* Classes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022C99FC2BAF6A3A00C168B3 /* Classes.swift */; };
+		024AB4D22B9781E7001062FB /* dnd5eCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AB4D12B9781E7001062FB /* dnd5eCompanionApp.swift */; };
+		024AB4D62B9781E9001062FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024AB4D52B9781E9001062FB /* Assets.xcassets */; };
+		024AB4D92B9781E9001062FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024AB4D82B9781E9001062FB /* Preview Assets.xcassets */; };
+		024AB4E12B978277001062FB /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 024AB4E02B978277001062FB /* Apollo */; };
+		024AB4E32B978277001062FB /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 024AB4E22B978277001062FB /* ApolloAPI */; };
+		024AB4E52B978277001062FB /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 024AB4E42B978277001062FB /* ApolloSQLite */; };
+		024AB4E72B978277001062FB /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 024AB4E62B978277001062FB /* ApolloTestSupport */; };
+		024AB4E92B978277001062FB /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 024AB4E82B978277001062FB /* ApolloWebSocket */; };
+		024AB4EE2B978520001062FB /* SpellDetail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 024AB4ED2B978520001062FB /* SpellDetail.graphql */; };
+		024AB4F12B978B4A001062FB /* DNDSchema in Frameworks */ = {isa = PBXBuildFile; productRef = 024AB4F02B978B4A001062FB /* DNDSchema */; };
+		024AB4F32B978C65001062FB /* Spells.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 024AB4F22B978C65001062FB /* Spells.graphql */; };
+		024AB4F52B979E48001062FB /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AB4F42B979E48001062FB /* NetworkController.swift */; };
+		024AB4F72B9A0BA8001062FB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AB4F62B9A0BA8001062FB /* API.swift */; };
+		024AB4F92B9A11BA001062FB /* Spells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024AB4F82B9A11B9001062FB /* Spells.swift */; };
+		026C6B982BBAFE5700B2F716 /* SearchFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C6B972BBAFE5700B2F716 /* SearchFilter.swift */; };
+		026C6B9A2BBBA59300B2F716 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C6B992BBBA59300B2F716 /* MainView.swift */; };
+		026C6B9C2BBBA6B000B2F716 /* SavedSpellsItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C6B9B2BBBA6B000B2F716 /* SavedSpellsItemsView.swift */; };
+		0284CEC02BA4B09300840A62 /* SpellsItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284CEBF2BA4B09300840A62 /* SpellsItemsView.swift */; };
+		0284CEC22BA4B62000840A62 /* SpellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284CEC12BA4B62000840A62 /* SpellCardView.swift */; };
+		0284CEC42BA6B2F700840A62 /* SpellsSearchFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284CEC32BA6B2F700840A62 /* SpellsSearchFilterView.swift */; };
+		0284CEC62BA6B4F100840A62 /* UserImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284CEC52BA6B4F100840A62 /* UserImageButton.swift */; };
+		0284CECA2BA8836800840A62 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284CEC92BA8836800840A62 /* Extensions.swift */; };
+		0284CECC2BA88EDA00840A62 /* IntFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284CECB2BA88EDA00840A62 /* IntFilter.swift */; };
+		0284CECE2BA8A07300840A62 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0284CECD2BA8A07200840A62 /* SearchBarView.swift */; };
+		02A8CBC52BC8B4F7002FF8E6 /* ClearFilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A8CBC42BC8B4F7002FF8E6 /* ClearFilterButtonView.swift */; };
+		02B62FA32BC21E14008CB56A /* MagicItem.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 02B62FA22BC21E14008CB56A /* MagicItem.graphql */; };
+		02B62FA72BC2259E008CB56A /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B62FA62BC2259E008CB56A /* Items.swift */; };
+		02B62FAB2BC22923008CB56A /* ItemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B62FAA2BC22923008CB56A /* ItemCardView.swift */; };
+		02B62FAD2BC22A41008CB56A /* MagicItemDetail.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 02B62FAC2BC22A41008CB56A /* MagicItemDetail.graphql */; };
+		02B62FAF2BC22CC1008CB56A /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B62FAE2BC22CC1008CB56A /* ItemDetailView.swift */; };
+		02B62FB22BC2379F008CB56A /* ItemDetailTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B62FB12BC2379F008CB56A /* ItemDetailTitleView.swift */; };
+		02B62FB42BC23BDA008CB56A /* ItemDetailRarityEquipmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B62FB32BC23BDA008CB56A /* ItemDetailRarityEquipmentView.swift */; };
+		02B62FB62BC23D7A008CB56A /* ItemDetailDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B62FB52BC23D7A008CB56A /* ItemDetailDescriptionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02003D832BAF8E7500E36241 /* MagicSchools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSchools.swift; sourceTree = "<group>"; };
+		02003D852BB5AC9900E36241 /* SpellsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsDetailView.swift; sourceTree = "<group>"; };
+		02003D872BB5BCD000E36241 /* SpellDetailTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailTitleView.swift; sourceTree = "<group>"; };
+		02003D892BB5BD1900E36241 /* SpellDetailLevelClassSchoolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailLevelClassSchoolView.swift; sourceTree = "<group>"; };
+		02003D8B2BB5BD8C00E36241 /* SpellDetailClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailClassesView.swift; sourceTree = "<group>"; };
+		02003D8D2BB5BDBC00E36241 /* SpellDetailDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailDescriptionView.swift; sourceTree = "<group>"; };
+		02003D8F2BB5BDF300E36241 /* SpellDetailHigherLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailHigherLevelView.swift; sourceTree = "<group>"; };
+		02003D922BB5BE4700E36241 /* SpellDetailRangeAOEView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailRangeAOEView.swift; sourceTree = "<group>"; };
+		02003D942BB5BE8300E36241 /* SpellDetailAOEShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailAOEShapeView.swift; sourceTree = "<group>"; };
+		02003D962BB5BEA800E36241 /* SpellDetailDCTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellDetailDCTypeView.swift; sourceTree = "<group>"; };
+		02003D982BB5C3A000E36241 /* Range.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
+		020826CE2BAB29ED000EE46A /* UISegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControl.swift; sourceTree = "<group>"; };
+		022C99FA2BABA98B00C168B3 /* ItemSearchFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchFilterView.swift; sourceTree = "<group>"; };
+		022C99FC2BAF6A3A00C168B3 /* Classes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classes.swift; sourceTree = "<group>"; };
+		024AB4CE2B9781E7001062FB /* dnd5eCompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dnd5eCompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		024AB4D12B9781E7001062FB /* dnd5eCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dnd5eCompanionApp.swift; sourceTree = "<group>"; };
+		024AB4D52B9781E9001062FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		024AB4D82B9781E9001062FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		024AB4ED2B978520001062FB /* SpellDetail.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = SpellDetail.graphql; sourceTree = "<group>"; };
+		024AB4F22B978C65001062FB /* Spells.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Spells.graphql; sourceTree = "<group>"; };
+		024AB4F42B979E48001062FB /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		024AB4F62B9A0BA8001062FB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		024AB4F82B9A11B9001062FB /* Spells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spells.swift; sourceTree = "<group>"; };
+		026C6B972BBAFE5700B2F716 /* SearchFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFilter.swift; sourceTree = "<group>"; };
+		026C6B992BBBA59300B2F716 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		026C6B9B2BBBA6B000B2F716 /* SavedSpellsItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedSpellsItemsView.swift; sourceTree = "<group>"; };
+		0284CEBF2BA4B09300840A62 /* SpellsItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsItemsView.swift; sourceTree = "<group>"; };
+		0284CEC12BA4B62000840A62 /* SpellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellCardView.swift; sourceTree = "<group>"; };
+		0284CEC32BA6B2F700840A62 /* SpellsSearchFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellsSearchFilterView.swift; sourceTree = "<group>"; };
+		0284CEC52BA6B4F100840A62 /* UserImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserImageButton.swift; sourceTree = "<group>"; };
+		0284CEC92BA8836800840A62 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0284CECB2BA88EDA00840A62 /* IntFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntFilter.swift; sourceTree = "<group>"; };
+		0284CECD2BA8A07200840A62 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		02A8CBC42BC8B4F7002FF8E6 /* ClearFilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearFilterButtonView.swift; sourceTree = "<group>"; };
+		02B62FA22BC21E14008CB56A /* MagicItem.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = MagicItem.graphql; sourceTree = "<group>"; };
+		02B62FA62BC2259E008CB56A /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		02B62FAA2BC22923008CB56A /* ItemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardView.swift; sourceTree = "<group>"; };
+		02B62FAC2BC22A41008CB56A /* MagicItemDetail.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = MagicItemDetail.graphql; sourceTree = "<group>"; };
+		02B62FAE2BC22CC1008CB56A /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		02B62FB12BC2379F008CB56A /* ItemDetailTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailTitleView.swift; sourceTree = "<group>"; };
+		02B62FB32BC23BDA008CB56A /* ItemDetailRarityEquipmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailRarityEquipmentView.swift; sourceTree = "<group>"; };
+		02B62FB52BC23D7A008CB56A /* ItemDetailDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailDescriptionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		024AB4CB2B9781E7001062FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024AB4F12B978B4A001062FB /* DNDSchema in Frameworks */,
+				024AB4E32B978277001062FB /* ApolloAPI in Frameworks */,
+				024AB4E72B978277001062FB /* ApolloTestSupport in Frameworks */,
+				024AB4E92B978277001062FB /* ApolloWebSocket in Frameworks */,
+				024AB4E12B978277001062FB /* Apollo in Frameworks */,
+				024AB4E52B978277001062FB /* ApolloSQLite in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02003D912BB5BDFC00E36241 /* SpellDetail */ = {
+			isa = PBXGroup;
+			children = (
+				02003D872BB5BCD000E36241 /* SpellDetailTitleView.swift */,
+				02003D892BB5BD1900E36241 /* SpellDetailLevelClassSchoolView.swift */,
+				02003D8B2BB5BD8C00E36241 /* SpellDetailClassesView.swift */,
+				02003D8D2BB5BDBC00E36241 /* SpellDetailDescriptionView.swift */,
+				02003D8F2BB5BDF300E36241 /* SpellDetailHigherLevelView.swift */,
+				02003D922BB5BE4700E36241 /* SpellDetailRangeAOEView.swift */,
+				02003D942BB5BE8300E36241 /* SpellDetailAOEShapeView.swift */,
+				02003D962BB5BEA800E36241 /* SpellDetailDCTypeView.swift */,
+			);
+			path = SpellDetail;
+			sourceTree = "<group>";
+		};
+		020826C92BAA6C12000EE46A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				026C6B992BBBA59300B2F716 /* MainView.swift */,
+				0284CEC32BA6B2F700840A62 /* SpellsSearchFilterView.swift */,
+				0284CEBF2BA4B09300840A62 /* SpellsItemsView.swift */,
+				020826CE2BAB29ED000EE46A /* UISegmentedControl.swift */,
+				022C99FA2BABA98B00C168B3 /* ItemSearchFilterView.swift */,
+				02003D852BB5AC9900E36241 /* SpellsDetailView.swift */,
+				026C6B9B2BBBA6B000B2F716 /* SavedSpellsItemsView.swift */,
+				02B62FAE2BC22CC1008CB56A /* ItemDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		024AB4C52B9781E7001062FB = {
+			isa = PBXGroup;
+			children = (
+				020826C92BAA6C12000EE46A /* Views */,
+				0284CED02BAA68DB00840A62 /* Subviews */,
+				0284CECF2BAA655E00840A62 /* Models */,
+				024AB4EC2B978503001062FB /* GraphQL */,
+				024AB4D02B9781E7001062FB /* dnd5eCompanion */,
+				024AB4CF2B9781E7001062FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		024AB4CF2B9781E7001062FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				024AB4CE2B9781E7001062FB /* dnd5eCompanion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		024AB4D02B9781E7001062FB /* dnd5eCompanion */ = {
+			isa = PBXGroup;
+			children = (
+				024AB4D12B9781E7001062FB /* dnd5eCompanionApp.swift */,
+				024AB4F42B979E48001062FB /* NetworkController.swift */,
+				0284CEC92BA8836800840A62 /* Extensions.swift */,
+				024AB4D52B9781E9001062FB /* Assets.xcassets */,
+				024AB4D72B9781E9001062FB /* Preview Content */,
+			);
+			path = dnd5eCompanion;
+			sourceTree = "<group>";
+		};
+		024AB4D72B9781E9001062FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				024AB4D82B9781E9001062FB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		024AB4EC2B978503001062FB /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				024AB4ED2B978520001062FB /* SpellDetail.graphql */,
+				024AB4F22B978C65001062FB /* Spells.graphql */,
+				02B62FA22BC21E14008CB56A /* MagicItem.graphql */,
+				02B62FAC2BC22A41008CB56A /* MagicItemDetail.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		0284CECF2BAA655E00840A62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0284CECB2BA88EDA00840A62 /* IntFilter.swift */,
+				024AB4F82B9A11B9001062FB /* Spells.swift */,
+				02B62FA62BC2259E008CB56A /* Items.swift */,
+				024AB4F62B9A0BA8001062FB /* API.swift */,
+				022C99FC2BAF6A3A00C168B3 /* Classes.swift */,
+				02003D832BAF8E7500E36241 /* MagicSchools.swift */,
+				02003D982BB5C3A000E36241 /* Range.swift */,
+				026C6B972BBAFE5700B2F716 /* SearchFilter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0284CED02BAA68DB00840A62 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				02B62FB02BC2378C008CB56A /* ItemDetail */,
+				02003D912BB5BDFC00E36241 /* SpellDetail */,
+				0284CEC12BA4B62000840A62 /* SpellCardView.swift */,
+				0284CECD2BA8A07200840A62 /* SearchBarView.swift */,
+				0284CEC52BA6B4F100840A62 /* UserImageButton.swift */,
+				02B62FAA2BC22923008CB56A /* ItemCardView.swift */,
+				02A8CBC42BC8B4F7002FF8E6 /* ClearFilterButtonView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		02B62FB02BC2378C008CB56A /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				02B62FB12BC2379F008CB56A /* ItemDetailTitleView.swift */,
+				02B62FB32BC23BDA008CB56A /* ItemDetailRarityEquipmentView.swift */,
+				02B62FB52BC23D7A008CB56A /* ItemDetailDescriptionView.swift */,
+			);
+			path = ItemDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		024AB4CD2B9781E7001062FB /* dnd5eCompanion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 024AB4DC2B9781E9001062FB /* Build configuration list for PBXNativeTarget "dnd5eCompanion" */;
+			buildPhases = (
+				024AB4CA2B9781E7001062FB /* Sources */,
+				024AB4CB2B9781E7001062FB /* Frameworks */,
+				024AB4CC2B9781E7001062FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dnd5eCompanion;
+			packageProductDependencies = (
+				024AB4E02B978277001062FB /* Apollo */,
+				024AB4E22B978277001062FB /* ApolloAPI */,
+				024AB4E42B978277001062FB /* ApolloSQLite */,
+				024AB4E62B978277001062FB /* ApolloTestSupport */,
+				024AB4E82B978277001062FB /* ApolloWebSocket */,
+				024AB4F02B978B4A001062FB /* DNDSchema */,
+			);
+			productName = dnd5eCompanion;
+			productReference = 024AB4CE2B9781E7001062FB /* dnd5eCompanion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		024AB4C62B9781E7001062FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					024AB4CD2B9781E7001062FB = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 024AB4C92B9781E7001062FB /* Build configuration list for PBXProject "dnd5eCompanion" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 024AB4C52B9781E7001062FB;
+			packageReferences = (
+				024AB4DF2B978277001062FB /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				024AB4EF2B978B4A001062FB /* XCLocalSwiftPackageReference "DNDSchema" */,
+			);
+			productRefGroup = 024AB4CF2B9781E7001062FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				024AB4CD2B9781E7001062FB /* dnd5eCompanion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		024AB4CC2B9781E7001062FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024AB4EE2B978520001062FB /* SpellDetail.graphql in Resources */,
+				024AB4F32B978C65001062FB /* Spells.graphql in Resources */,
+				02B62FA32BC21E14008CB56A /* MagicItem.graphql in Resources */,
+				024AB4D92B9781E9001062FB /* Preview Assets.xcassets in Resources */,
+				024AB4D62B9781E9001062FB /* Assets.xcassets in Resources */,
+				02B62FAD2BC22A41008CB56A /* MagicItemDetail.graphql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		024AB4CA2B9781E7001062FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02003D8E2BB5BDBC00E36241 /* SpellDetailDescriptionView.swift in Sources */,
+				026C6B9A2BBBA59300B2F716 /* MainView.swift in Sources */,
+				026C6B9C2BBBA6B000B2F716 /* SavedSpellsItemsView.swift in Sources */,
+				022C99FB2BABA98B00C168B3 /* ItemSearchFilterView.swift in Sources */,
+				026C6B982BBAFE5700B2F716 /* SearchFilter.swift in Sources */,
+				0284CEC42BA6B2F700840A62 /* SpellsSearchFilterView.swift in Sources */,
+				02B62FB62BC23D7A008CB56A /* ItemDetailDescriptionView.swift in Sources */,
+				0284CECA2BA8836800840A62 /* Extensions.swift in Sources */,
+				024AB4F92B9A11BA001062FB /* Spells.swift in Sources */,
+				024AB4D22B9781E7001062FB /* dnd5eCompanionApp.swift in Sources */,
+				02003D8C2BB5BD8C00E36241 /* SpellDetailClassesView.swift in Sources */,
+				02B62FAB2BC22923008CB56A /* ItemCardView.swift in Sources */,
+				02B62FAF2BC22CC1008CB56A /* ItemDetailView.swift in Sources */,
+				02B62FB22BC2379F008CB56A /* ItemDetailTitleView.swift in Sources */,
+				02003D882BB5BCD000E36241 /* SpellDetailTitleView.swift in Sources */,
+				022C99FD2BAF6A3A00C168B3 /* Classes.swift in Sources */,
+				024AB4F72B9A0BA8001062FB /* API.swift in Sources */,
+				020826CF2BAB29ED000EE46A /* UISegmentedControl.swift in Sources */,
+				02003D952BB5BE8300E36241 /* SpellDetailAOEShapeView.swift in Sources */,
+				02B62FA72BC2259E008CB56A /* Items.swift in Sources */,
+				024AB4F52B979E48001062FB /* NetworkController.swift in Sources */,
+				0284CEC02BA4B09300840A62 /* SpellsItemsView.swift in Sources */,
+				0284CECE2BA8A07300840A62 /* SearchBarView.swift in Sources */,
+				02003D932BB5BE4700E36241 /* SpellDetailRangeAOEView.swift in Sources */,
+				02003D902BB5BDF300E36241 /* SpellDetailHigherLevelView.swift in Sources */,
+				0284CECC2BA88EDA00840A62 /* IntFilter.swift in Sources */,
+				0284CEC62BA6B4F100840A62 /* UserImageButton.swift in Sources */,
+				02003D992BB5C3A000E36241 /* Range.swift in Sources */,
+				02B62FB42BC23BDA008CB56A /* ItemDetailRarityEquipmentView.swift in Sources */,
+				02A8CBC52BC8B4F7002FF8E6 /* ClearFilterButtonView.swift in Sources */,
+				02003D972BB5BEA800E36241 /* SpellDetailDCTypeView.swift in Sources */,
+				02003D8A2BB5BD1900E36241 /* SpellDetailLevelClassSchoolView.swift in Sources */,
+				0284CEC22BA4B62000840A62 /* SpellCardView.swift in Sources */,
+				02003D862BB5AC9900E36241 /* SpellsDetailView.swift in Sources */,
+				02003D842BAF8E7500E36241 /* MagicSchools.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		024AB4DA2B9781E9001062FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		024AB4DB2B9781E9001062FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		024AB4DD2B9781E9001062FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"dnd5eCompanion/Preview Content\"";
+				DEVELOPMENT_TEAM = 4MNKZ842TC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "DND Companion";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = school.dnd5eCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		024AB4DE2B9781E9001062FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"dnd5eCompanion/Preview Content\"";
+				DEVELOPMENT_TEAM = 4MNKZ842TC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "DND Companion";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = school.dnd5eCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		024AB4C92B9781E7001062FB /* Build configuration list for PBXProject "dnd5eCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024AB4DA2B9781E9001062FB /* Debug */,
+				024AB4DB2B9781E9001062FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		024AB4DC2B9781E9001062FB /* Build configuration list for PBXNativeTarget "dnd5eCompanion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				024AB4DD2B9781E9001062FB /* Debug */,
+				024AB4DE2B9781E9001062FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		024AB4EF2B978B4A001062FB /* XCLocalSwiftPackageReference "DNDSchema" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DNDSchema;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		024AB4DF2B978277001062FB /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		024AB4E02B978277001062FB /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 024AB4DF2B978277001062FB /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		024AB4E22B978277001062FB /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 024AB4DF2B978277001062FB /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		024AB4E42B978277001062FB /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 024AB4DF2B978277001062FB /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		024AB4E62B978277001062FB /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 024AB4DF2B978277001062FB /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
+		};
+		024AB4E82B978277001062FB /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 024AB4DF2B978277001062FB /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		024AB4F02B978B4A001062FB /* DNDSchema */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DNDSchema;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 024AB4C62B9781E7001062FB /* Project object */;
+}

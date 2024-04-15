@@ -1,0 +1,11 @@
+
+query MagicItemDetail($name: String) {
+  magicItems(name: $name) {
+    name
+    rarity
+    equipment_category {
+      name
+    }
+    desc
+  }
+}

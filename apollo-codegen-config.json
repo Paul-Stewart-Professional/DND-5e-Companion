@@ -1,0 +1,44 @@
+{
+    "schemaDownload": {
+        "downloadMethod": {
+            "introspection": {
+                "endpointURL": "https://www.dnd5eapi.co/graphql",
+                "httpMethod": {
+                    "POST": {}
+                },
+                "includeDeprecatedInputValues": false,
+                "outputFormat": "SDL"
+            }
+        },
+        "downloadTimeout": 60,
+        "headers": [],
+        "outputPath": "./DNDSchema.graphqls"
+    },
+    "schemaNamespace" : "DNDSchema",
+    "input" : {
+        "operationSearchPaths" : [
+            "**/*.graphql"
+        ],
+        
+        "schemaSearchPaths" : [
+            "**/*.graphqls"
+        ]
+    },
+    "output" : {
+        "testMocks" : {
+            "none" : {
+            }
+        },
+        "schemaTypes" : {
+            "path" : "./DNDSchema",
+            "moduleType" : {
+                "swiftPackageManager" : {
+                }
+            }
+        },
+        "operations" : {
+            "inSchemaModule" : {
+            }
+        }
+    }
+}
