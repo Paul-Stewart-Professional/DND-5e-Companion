@@ -95,10 +95,11 @@ struct SpellsItemsView: View {
                     }
                 }
                 
-//                if sharedSpellsArray.filteredSpellsArray != [] || sharedItemsArray.filteredItemsArray != [] {
-//                    ClearFilterButtonView(clearFilter: clearFilter)
-//                }
-                
+                if sharedSpellsArray.filteredSpellsArray != [] || sharedItemsArray.filteredItemsArray != [] {
+                    if showCancelButton == true {
+                        ClearFilterButtonView(clearFilter: clearFilter)
+                    }
+                }
             }
             .background(Color.darkBrown)
             .onAppear {
