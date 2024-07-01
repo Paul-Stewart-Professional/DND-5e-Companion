@@ -14,6 +14,7 @@ struct SearchBarView: View {
     
     @Binding var searchText: String
     @Binding var showCancelButton: Bool
+    @Binding var showClearFilterButton: Bool
     @Binding var showingSheet: Bool
     @Binding var selectedSheetValue: Int
     
@@ -24,6 +25,7 @@ struct SearchBarView: View {
                 TextField("filter", text: $searchText, onEditingChanged: { isEditing in
                     withAnimation(.easeIn) {
                         self.showCancelButton = true
+                        self.showClearFilterButton = true
                     }
                 }, onCommit: {
                     //nothing for now
@@ -58,7 +60,7 @@ struct SearchBarView: View {
                 .sheet(isPresented: $showingSheet, content: {
                     ZStack {
                         if selectedSheetValue == 0 {
-                            SpellsSearchFilterView(sharedSpellsArray: sharedSpellsArray)
+                            SpellsSearchFilterView(showClearFilterButton: $showClearFilterButton, sharedSpellsArray: sharedSpellsArray)
                         } else {
                             ItemSearchFilterView()
                         }
@@ -77,6 +79,7 @@ struct SearchBarView: View {
                     self.$searchText.wrappedValue = ""
                     withAnimation {
                         self.$showCancelButton.wrappedValue = false
+                        self.$showClearFilterButton.wrappedValue = false
                     }
                     sharedSpellsArray.filteredSpellsArray = []
                     sharedItemsArray.filteredItemsArray = []

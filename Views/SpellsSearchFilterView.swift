@@ -16,6 +16,7 @@ struct SpellsSearchFilterView: View {
     @State var level: Double = SpellSearchFilter.shared.maxLevel
     @State var classSelection = SpellSearchFilter.shared.classSelection
     @State var schoolSelection = SpellSearchFilter.shared.schoolSelection
+    @Binding var showClearFilterButton: Bool
     
     @StateObject var sharedSpellsArray: SharedSpellsArray
     
@@ -74,6 +75,7 @@ struct SpellsSearchFilterView: View {
                     SpellSearchFilter.shared.maxLevel = level
                     SpellSearchFilter.shared.classSelection = classSelection
                     SpellSearchFilter.shared.schoolSelection = schoolSelection
+                    showClearFilterButton = true
                     dismiss()
                 }, label: {
                     Text("Save Filter")
@@ -85,5 +87,5 @@ struct SpellsSearchFilterView: View {
 }
 
 #Preview {
-    SpellsSearchFilterView(sharedSpellsArray: SharedSpellsArray())
+    SpellsSearchFilterView(showClearFilterButton: .constant(false), sharedSpellsArray: SharedSpellsArray())
 }

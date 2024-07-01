@@ -20,6 +20,7 @@ struct SpellsItemsView: View {
     @State var searchText = ""
     @State var spellItemSelection = 0
     @State var showCancelButton = false
+    @State var showClearFilterButton = false
     @State private var showingSheet = false
     @State var level: Int = 9
     @State var classSelection: GraphQLNullable<String> = nil
@@ -34,7 +35,8 @@ struct SpellsItemsView: View {
                         SearchBarView(sharedSpellsArray: sharedSpellsArray,
                                       sharedItemsArray: sharedItemsArray,
                                       searchText: $searchText,
-                                      showCancelButton: $showCancelButton,
+                                      showCancelButton: $showCancelButton, 
+                                      showClearFilterButton: $showClearFilterButton,
                                       showingSheet: $showingSheet,
                                       selectedSheetValue: $spellItemSelection)
                         
@@ -96,7 +98,7 @@ struct SpellsItemsView: View {
                 }
                 
                 if sharedSpellsArray.filteredSpellsArray != [] || sharedItemsArray.filteredItemsArray != [] {
-                    if showCancelButton == true {
+                    if showClearFilterButton == true {
                         ClearFilterButtonView(clearFilter: clearFilter)
                     }
                 }
